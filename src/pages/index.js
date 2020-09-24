@@ -1,25 +1,25 @@
 import React from "react"
 import { Link } from "gatsby"
-
 import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
 
 const IndexPage = () => (
+
+
   <Layout>
     <SEO title="Home" />
     <section className="hero">
       <h1>Angela & Terry</h1>
       <p>June 12, 2021 ~ Wenas, WA</p>
-      <p>Countdown TImer</p>
       {/* <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
         <Image />
       </div> */}
-      <Link to="/rsvp/">RSVP & Registry</Link>
-      <Link to="/location/">Location Details</Link>
+
+      <p>Check back on this website for more information as the date gets closer. We are planning the full wedding now and will change plans as needed with COVID.</p>
     </section>
 
-    <section>
+    {/* <section>
       <h2>Formal Details</h2>
       <p>Time, location, map, what to wear</p>
       <p>Details (Link to page)</p>
@@ -31,7 +31,7 @@ const IndexPage = () => (
 
     <section>
       <h2>A few photos</h2>
-    </section>
+    </section> */}
   </Layout>
 )
 

@@ -1,22 +1,17 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
-import React from "react"
+import { Link } from 'gatsby'
+import PropTypes from 'prop-types'
+import React from 'react'
+import Icon from '../images/heartInfinity.png'
 
 const Header = ({ siteTitle }) => (
   <header>
-    <div>
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
+    <nav>
+      <ul>
+        {/* <li><Link to="/location">Location & Event Details</Link></li> */}
+        <li><Link to="/"><img src={Icon} alt="Heart Infinity"/></Link></li>
+        {/* <li><Link to="/rsvp">RSVP & Regsistry</Link></li> */}
+      </ul>
+    </nav>
   </header>
 )
 
