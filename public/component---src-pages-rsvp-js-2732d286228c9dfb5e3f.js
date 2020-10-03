@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[8],{OU7M:function(e,t,n){"use strict";n.r(t);var a=n("q1tI"),r=n.n(a),l=n("Bl7J"),c=n("vrFN");t.default=function(){return r.a.createElement(l.a,null,r.a.createElement(c.a,{title:"RSVP & Registry"}),r.a.createElement("h1",null,"RSVP & Registery"))}}}]);
+//# sourceMappingURL=component---src-pages-rsvp-js-2732d286228c9dfb5e3f.js.map

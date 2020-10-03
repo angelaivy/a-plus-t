@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[7],{RE8H:function(e,t,n){"use strict";n.r(t);var a=n("q1tI"),l=n.n(a),c=n("Bl7J"),o=n("vrFN");t.default=function(){return l.a.createElement(c.a,null,l.a.createElement(o.a,{title:"Location"}),l.a.createElement("h1",null,"Location & Event Details"))}}}]);
+//# sourceMappingURL=component---src-pages-location-js-b13966b6af18e2d2f39e.js.map
