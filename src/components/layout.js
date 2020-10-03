@@ -1,16 +1,6 @@
-/**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
- */
-
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-//import BackgroundSection from './BackgroundSection'
-
-//import Header from "./header"
 import Footer from "./footer"
 import "./styles.scss"
 
@@ -26,17 +16,11 @@ const Layout = ({ children }) => {
   `)
 
   return (
-      // <BackgroundSection className="siteBG">
       <div>
-      {/* <Header /> */}
-      <div>
-      <main>{children}</main>
+        <main>{children}</main>
+         <Footer />
       </div>
-      <Footer />
-      </div>
-     
-      // </BackgroundSection>
-  )
+    )
 }
 
 Layout.propTypes = {
