@@ -12,7 +12,7 @@ const IndexPage = (props) => (
   <SEO title="Home" />
     
    <section className="hero">
-      <h1>Angela & Terry</h1>
+      <h1>Angela Jean Ivy & Terry Jay Wilson</h1>
       <p>June 12, 2021 ~ Wenas, WA</p>
       <Image />
       <p>Check back on this website for more information as the date gets closer. We are planning the full wedding now and will change plans as needed with COVID.</p>

@@ -8,7 +8,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-import BackgroundSection from './BackgroundSection'
+//import BackgroundSection from './BackgroundSection'
 
 //import Header from "./header"
 import Footer from "./footer"
@@ -26,13 +26,16 @@ const Layout = ({ children }) => {
   `)
 
   return (
-      <BackgroundSection className="siteBG">
+      // <BackgroundSection className="siteBG">
+      <div>
       {/* <Header /> */}
       <div>
-        <main>{children}</main>
+      <main>{children}</main>
       </div>
       <Footer />
-      </BackgroundSection>
+      </div>
+     
+      // </BackgroundSection>
   )
 }
 
