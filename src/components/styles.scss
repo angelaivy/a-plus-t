@@ -1,15 +1,16 @@
 @import "normalize.css";
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Parisienne&display=swap');
-
-$teal: #2b8b94;
+@font-face{ 
+	font-family: 'resistenza_-_turquoise-webfont';
+	src: url('../fonts/turquoise.woff') format('woff');        
+}
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;600&display=swap');
 $darkTeal: #003e4a;
 $darkPlum: #520037;
 $plum: #9e0052;
 $sand: #ffedd0;
 
-$headline:  'Parisienne', cursive;
-$body: 'Open Sans', sans-serif;
-
+$headline:  'resistenza_-_turquoise-webfont', cursive;
+$body: 'Cormorant Garamond', serif;
 
 /* TYPOGRAPHY */
 body {
@@ -41,7 +42,7 @@ h3 {
 }
 
 a { 
-    color: $teal;
+    color: $darkTeal;
     text-decoration: underline;
 }
 
@@ -104,7 +105,7 @@ section {
 footer {
     display: flex;
     justify-content: center;
-    padding: 100px 50px;
+    padding: 20px 0;
     background: $darkTeal;
     color: $sand;
 }
