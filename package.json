@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "A + T",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "Angela Ivy & Terry Wilson Wedding. June 12, 2021 ~ Where the desert meets the trees. Wenas, WA.",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "@angelazer",
   "dependencies": {
     "gatsby": "^2.24.50",
     "gatsby-background-image": "^1.1.2",

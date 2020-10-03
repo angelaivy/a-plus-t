@@ -24,7 +24,7 @@ module.exports = {
         background_color: `#05878a`,
         theme_color: `#05878a`,
         display: `minimal-ui`,
-        icon: `src/images/heartInfinity.png`, // This path is relative to the root of the site.
+        icon: `src/images/heartInfinity.png`,
       },
     },
     `gatsby-plugin-offline`,
