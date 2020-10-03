@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `A + T Wedding`,
-    description: `Angela Ivy and Terry Wilson are getting married on June 12, 2021, where the desert meets the trees, Wenas, Washington.`,
+    description: `Angela Ivy and Terry Wilson are getting married on June 12, 2021, where the desert meets the trees. Wenas, Washington.`,
     author: `@angelazer`,
   },
   plugins: [
@@ -27,7 +27,7 @@ module.exports = {
         icon: `src/images/heartInfinity.png`, // This path is relative to the root of the site.
       },
     },
-     `gatsby-plugin-offline`,
-     `gatsby-plugin-sass`,
+    `gatsby-plugin-offline`,
+    `gatsby-plugin-sass`,
   ],
 }
