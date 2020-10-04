@@ -8,12 +8,16 @@ const IndexPage = (props) => (
   <Layout>
   <SEO title="Home" />
     <section className="hero">
+    <div className="image">
+          <Image />
+        </div>
       <h1>
         <span>Angela Jean Ivy</span>    
-        <span className="infin">&infin;</span>    
+        <span className="infin">&infin;</span>
         <span>Terry Jay Wilson</span>
       </h1>
       <div className="intro">
+        
         <h2>TIE THE KNOT</h2>
         <h3>June 12, 2021</h3>
         <p><strong>Where the desert meets the trees ~ Wenas, WA</strong></p>
@@ -22,8 +26,8 @@ const IndexPage = (props) => (
     <section className="mainContent">
       <p>Hi Everyone! Thank you so much for visiting our wedding website! We are very excited to celebrate our day with our closest family & friends.</p>
       <p>At this time, we are planning on moving ahead with the full wedding and as the date gets closer, we will be updating plans as needed for COVID restrictions.</p>
-      <p>Our wedding will be held on private property in Wenas, WA. It is a semi-destination for most folks, so we are looking at different options for lodging and/or transportation as we have guests coming from all over. It's about a 45 minute drive NW from Yakima. Our Ceremony will be held on on a hill, overlooking the valley up to the Cascades, followed by a dinner reception.</p>
-      <p>More details to come following the formal invitations. Feel free to <a href="mailto: angelaivy1111@gmail.com">email us</a> if you have any questions.</p>
+      <p>Our wedding will be held on private property in Wenas, WA. It is a semi-destination for most folks, so we are looking at different options for lodging and/or transportation as we have guests coming from all over. It's about a 45 minute drive NW from Yakima. Our ceremony will be held on on a hill, overlooking the valley up to the Cascades, followed by a dinner and celebration.</p>
+      <p>More details to come regarding lodging options, directions, RSVP, time, etc. following the formal invitations. Feel free to <a href="mailto: angelaivy1111@gmail.com">email us</a> if you have any questions.</p>
 
       <div className="signOff">
         <p>Cheers!</p>

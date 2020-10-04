@@ -46,14 +46,6 @@
         color: $darkPlum;
       }
     }
-    @include lgDesktop {
-      display: flex;
-      flex-wrap: nowrap;
-      justify-content: space-around;
-    }
-    @include fullscreen {
-      justify-content: center;
-    }
   }
   h2 {
     @include font-size(40px);

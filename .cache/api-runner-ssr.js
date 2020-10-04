@@ -3,7 +3,7 @@ var plugins = [{
       options: {"plugins":[]},
     },{
       plugin: require('/Users/Angelazer/Desktop/github/a-plus-t/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
-      options: {"plugins":[],"name":"a-plus-t-wedding","short_name":"wedding","start_url":"/","background_color":"#05878a","theme_color":"#05878a","display":"minimal-ui","icon":"src/images/heartInfinity.png","cache_busting_mode":"query","include_favicon":true,"legacy":true,"theme_color_in_head":true,"cacheDigest":"216faa02cc1458090e8a2a49803986c4"},
+      options: {"plugins":[],"name":"a-plus-t-wedding","short_name":"wedding","start_url":"/","background_color":"#05878a","theme_color":"#05878a","display":"minimal-ui","icon":"src/images/heartInfinity.png","cache_busting_mode":"query","include_favicon":true,"legacy":true,"theme_color_in_head":true,"cacheDigest":"d8b53742ab82afbbd48b8ce0554b6300"},
     },{
       plugin: require('/Users/Angelazer/Desktop/github/a-plus-t/node_modules/gatsby-plugin-offline/gatsby-ssr'),
       options: {"plugins":[]},
