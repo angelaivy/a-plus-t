@@ -4,36 +4,46 @@
 @import "./scss/typography";
 @import "./scss/ui_elements";
 
-nav {
-    ul {
-        li {
-            list-style-type: circle;
-            display: inline;
+.pageContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 150px 40px 1fr min-content;
+    @include desktop {
+        background-image: url("../images/backgroundScenery.jpg");
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .heroMobile {
+        grid-row: 1 / span 2;
+        grid-column: 1;
+        background-image: url("../images/heroMobile.jpg");
+        width: 100%;
+        background-size: 150%;
+        background-position: bottom;
+        background-repeat: no-repeat;
+        @include desktop { 
+            background-image: none;
+            background-size: 100%;
         }
+    }
+    .container {
+        grid-row: 2 / span 2;
+        grid-column: 1;
+        z-index: 1;
     }
 }
 .container {
-    background-image: url("../images/backgroundScenery.jpg");
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    .inner {
-        padding: rem-calc(40) rem-calc(40) rem-calc(80);
-        max-width: 60vw;
-        margin: 0 auto;
-        background: rgba(255,255,255,0.9);
-        @include tablet {
-            max-width: 70vw;
-            padding: rem-calc(100) rem-calc(40) rem-calc(140);
-        }
-        @include desktop {
-            max-width: 60vw;
-        }
-    }
+    max-width: 90vw;
+    margin: 0 auto;  
 }
 /* LAYOUT */
-
+main {
+    background: rgba(255,255,255,1);
+    border-radius: 5px;
+    padding: rem-calc(40 20);
+}
 header {
     display: flex;
     justify-content: flex-start;
@@ -53,26 +63,40 @@ header {
         }
     }
 }
+hr {
+    border-top: dotted $teal;
+    width: 80%;
+    margin: 0 auto;
+}
 section {
-    margin-bottom: rem-calc(40);
+    margin: rem-calc(40 0);
+    &:first-child {
+        margin-top: 0;
+    }
+    &:last-child {
+        margin-bottom: 0;
+    }
     p {
         margin-bottom: rem-calc(20);
     }
-    &:last-child {
-        margin: 0;
-    }
-
     &.hero {
         text-align: center;
         .image {
-            max-width: 450px;
+            max-width: 350px;
             margin: 0 auto;
+        }
+        p {
+            margin: 0;
         }
     }
     &.mainContent {
         max-width: 550px;
-        margin: 0 auto;
+        margin-left: auto;
+        margin-right: auto;
 
+        .imageRose {
+            max-width: 100px
+        }
         .signOff {
             p {
                 margin: 0;
@@ -100,8 +124,6 @@ footer {
         }
         p {
             @include font-size(20px);
-            margin-bottom: rem-calc(20);
-
             @include desktop {
                 margin-bottom: 0;
                 margin-right: rem-calc(20);

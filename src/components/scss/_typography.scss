@@ -20,7 +20,7 @@
       font-size: rem-calc(16);
       line-height: 1.5;
       font-family: $body;
-      color:#161114;
+      color: $text;
   }
   body {
     background: $darkTeal;
@@ -51,7 +51,6 @@
     @include font-size(40px);
     text-transform: uppercase;
     color: $darkTeal;
-    margin: rem-calc(40 0 0 0);
   }
   h3 {
     font-family: $body;
