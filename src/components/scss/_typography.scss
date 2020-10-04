@@ -1,0 +1,75 @@
+@import "./mixins";
+@import "./functions";
+@import "./ui_elements";
+@import "~rfs/scss";
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;600&display=swap');
+@font-face {
+  font-family: 'Turquoise-Regular';
+  src: 
+    url('../fonts/Turquoise-Regular.eot?#iefix') format('embedded-opentype'),  url('../fonts/Turquoise-Regular.otf')  format('opentype'),
+    url('../fonts/Turquoise-Regular.woff') format('woff'), url('../fonts/Turquoise-Regular.ttf') format('truetype'), url('../fonts/Turquoise-Regular.svg#Turquoise-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  }
+  $headline:  'Turquoise-Regular', cursive;
+  $body: 'Cormorant Garamond', serif;
+  
+  /* TYPOGRAPHY */
+  html,
+  body {
+      font-size: rem-calc(16);
+      line-height: 1.5;
+      font-family: $body;
+      color:#161114;
+  }
+  body {
+    background: $darkTeal;
+  }
+  h1, 
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 { 
+    font-family: $headline;
+    margin: 0;
+  }
+  
+  h1 {
+    @include font-size(60px);
+    display: grid;
+    line-height: 1.2;
+    span {
+      color: $plum;
+      &.infin {
+        margin: 0 20px;
+        color: $darkPlum;
+      }
+    }
+    @include lgDesktop {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: space-around;
+    }
+    @include fullscreen {
+      justify-content: center;
+    }
+  }
+  h2 {
+    @include font-size(40px);
+    text-transform: uppercase;
+    color: $darkTeal;
+    margin: rem-calc(40 0 0 0);
+  }
+  h3 {
+    font-family: $body;
+    @include font-size(20px);
+  }
+  p {
+    margin: 0;
+  }
+  a {
+    font-weight: bold;
+    color: $darkTeal;
+    text-decoration: underline;
+  }

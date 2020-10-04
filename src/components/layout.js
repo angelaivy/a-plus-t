@@ -5,9 +5,11 @@ import "./styles.scss"
 
 const Layout = ({ children }) => {
   return (
-      <div>
-        <main>{children}</main>
-         <Footer />
+      <div className="container">
+        <div className="inner">
+          <main>{children}</main>
+        </div>
+          <Footer />
       </div>
     )
 }
