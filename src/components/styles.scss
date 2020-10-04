@@ -18,7 +18,6 @@ nav {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    
     .inner {
         padding: rem-calc(40) rem-calc(40) rem-calc(80);
         max-width: 60vw;
@@ -26,6 +25,7 @@ nav {
         background: rgba(255,255,255,0.9);
         @include tablet {
             max-width: 70vw;
+            padding: rem-calc(100) rem-calc(40) rem-calc(140);
         }
         @include desktop {
             max-width: 80vw;
