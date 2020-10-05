@@ -8,6 +8,7 @@ const IndexPage = (props) => (
   <Layout>
   <SEO title="Home" />
     <section className="hero">
+      <p className="showFullscreen">Save the Date!</p>
       <h1>
         <span>Angela Jean Ivy</span>    
         <span className="infin">&infin;</span>

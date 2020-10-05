@@ -3,6 +3,7 @@
 @import "./ui_elements";
 @import "~rfs/scss";
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
 @font-face {
   font-family: 'Turquoise-Regular';
   src: 
@@ -13,11 +14,12 @@
   }
   $headline:  'Turquoise-Regular', cursive;
   $body: 'Cormorant Garamond', serif;
+  $cursive: 'Parisienne', cursive;
   
   /* TYPOGRAPHY */
   html,
   body {
-      font-size: rem-calc(16);
+      font-size: 18px;
       line-height: 1.5;
       font-family: $body;
       color: $text;
@@ -45,6 +47,9 @@
         margin: 0 20px;
         color: $darkPlum;
       }
+    }
+    @include lgDesktop {
+      font-size: 64px;
     }
   }
   h2 {
