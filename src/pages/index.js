@@ -9,7 +9,7 @@ import ImageRose from "../components/imageRose"
 const IndexPage = (props) => (
   <Layout>
   <Helmet>
-      <script src={withPrefix('script.js')} type="text/javascript" />
+      <script src={withPrefix('scripts.js')} type="text/javascript" />
   </Helmet>
   <SEO title="Home" />
     <section className="hero">
