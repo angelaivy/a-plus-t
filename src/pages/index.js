@@ -1,4 +1,6 @@
 import React from "react"
+import Helmet from "react-helmet"
+import { withPrefix } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Image from "../components/image"
@@ -6,6 +8,9 @@ import ImageRose from "../components/imageRose"
 
 const IndexPage = (props) => (
   <Layout>
+  <Helmet>
+      <script src={withPrefix('script.js')} type="text/javascript" />
+  </Helmet>
   <SEO title="Home" />
     <section className="hero">
       <p className="showFullscreen">Save the Date!</p>
