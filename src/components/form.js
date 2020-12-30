@@ -29,6 +29,8 @@ const Form = () => (
       
       <label for="song">What song would bring you out on the dance floor?</label>
       <input id="song" type="text"></input>
+
+      <button type="submit">Submit</button>
     </form>
 )
 
