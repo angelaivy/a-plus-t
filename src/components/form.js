@@ -2,7 +2,7 @@ import React from "react"
 
 
 const Form = () => (
-    <form name="wedding-rsvp" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+    <form name="wedding-rsvp" method="thank-you" data-netlify="true" netlify-honeypot="bot-field">
       <input type="hidden" form-name="wedding-rsvp" value="wedding-rsvp" />
 
       <label for="name">Name</label>
