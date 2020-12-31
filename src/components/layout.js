@@ -9,7 +9,7 @@ const Layout = ({ children }) => {
     <div>
       <div class="unsupported-browser"></div>
       <div className="pageContainer">
-        <Header/>
+        {/* <Header/> */}
         <div className="heroImage"><p>Save the Date!</p></div>
         <div className="container">
           <main>{children}</main>
