@@ -3,7 +3,7 @@ import React from "react"
 
 const Form = () => (
     <form name="wedding-rsvp" method="POST" data-netlify="true" netlify-honeypot="bot-field">
-      <input type="hidden" name="wedding-rsvp" value="wedding-rsvp" />
+      <input type="hidden" form-name="wedding-rsvp" value="wedding-rsvp" />
 
       <label for="name">Name</label>
       <input id="name" type="text" required></input>
@@ -17,7 +17,6 @@ const Form = () => (
 
       <label for="how-many">Number in party</label>
       <input type="number" id="how-many" name="how-many" min="0" max="8"></input>
-
 
       <p>Will you need accomodations?</p>
       <label for="hotel">Hotel</label>
@@ -34,6 +33,8 @@ const Form = () => (
 
       <button type="submit">Submit</button>
     </form>
+
+    
 )
 
 export default Form
