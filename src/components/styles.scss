@@ -1,186 +1,186 @@
-@import "normalize.css";
-@import "./scss/mixins";
-@import "./scss/functions";
-@import "./scss/typography";
-@import "./scss/ui_elements";
+// @import "normalize.css";
+// @import "./scss/mixins";
+// @import "./scss/functions";
+// @import "./scss/typography";
+// @import "./scss/ui_elements";
 
-.pageContainer {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 150px 40px 1fr min-content;
-    @include tablet {
-        grid-template-rows: 200px 80px 1fr min-content;
-    }
-    @include desktop {
-        grid-template-rows: 300px 80px 1fr min-content;
-    }
-    @include fullscreen {
-        grid-template-rows: 1fr;
-    }
-    .heroImage {
-        grid-row: 1 / span 2;
-        grid-column: 1;
-        width: 100%;
-        background-image: url("../images/background2.jpg");
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        p {
-            border-radius: 5px;
-            color: $darkTeal;
-            font-family: $cursive;
-            margin: 20px auto 0;
-            text-align: center;
-            font-size: 22px;
-            line-height: 22px;
-            @include tablet {
-                font-size: 42px;
-                line-height: 42px;
-                margin: 50px auto 0;
-            }
-            @include lgDesktop {
-                font-size: 52px;
-                line-height: 52px;
-                margin: 80px auto 0;
-            }
-            @include fullscreen {
-                display: none;
-            }
-        }
-        @include tablet {
+// .pageContainer {
+//     display: grid;
+//     grid-template-columns: 1fr;
+//     grid-template-rows: 150px 40px 1fr min-content;
+//     @include tablet {
+//         grid-template-rows: 200px 80px 1fr min-content;
+//     }
+//     @include desktop {
+//         grid-template-rows: 300px 80px 1fr min-content;
+//     }
+//     @include fullscreen {
+//         grid-template-rows: 1fr;
+//     }
+//     .heroImage {
+//         grid-row: 1 / span 2;
+//         grid-column: 1;
+//         width: 100%;
+//         background-image: url("../images/background2.jpg");
+//         background-size: cover;
+//         background-position: center;
+//         background-repeat: no-repeat;
+//         p {
+//             border-radius: 5px;
+//             color: $darkTeal;
+//             font-family: $cursive;
+//             margin: 20px auto 0;
+//             text-align: center;
+//             font-size: 22px;
+//             line-height: 22px;
+//             @include tablet {
+//                 font-size: 42px;
+//                 line-height: 42px;
+//                 margin: 50px auto 0;
+//             }
+//             @include lgDesktop {
+//                 font-size: 52px;
+//                 line-height: 52px;
+//                 margin: 80px auto 0;
+//             }
+//             @include fullscreen {
+//                 display: none;
+//             }
+//         }
+//         @include tablet {
             
-        }
-    }
-    .container {
-        grid-row: 2 / span 2;
-        grid-column: 1;
-        z-index: 1;
-        max-width: 90vw;
-        margin: 0 auto;  
-        @include tablet {
-            max-width: 100%;
-            width: 80%;
-        }
-        @include desktop {
-            width: 70%;
-        }
-    }
-}
+//         }
+//     }
+//     .container {
+//         grid-row: 2 / span 2;
+//         grid-column: 1;
+//         z-index: 1;
+//         max-width: 90vw;
+//         margin: 0 auto;  
+//         @include tablet {
+//             max-width: 100%;
+//             width: 80%;
+//         }
+//         @include desktop {
+//             width: 70%;
+//         }
+//     }
+// }
 
-/* LAYOUT */
-main {
-    background: rgba(255,255,255,1);
-    border-radius: 5px;
-    padding: rem-calc(40 20);
-}
-header {
-    grid-row: 1;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    nav {
-        display: grid;
-        justify-content: center;
-        img {
-            width: 100px;
-        }
-        ul {
-            padding: 0;
-            margin: 0;
-            li {
-                margin-left: 40px;
-            }
-        }
-    }
-}
-hr {
-    border-top: dotted $teal;
-    width: 80%;
-    margin: 0 auto;
-    @include desktop {
-        width: 70%;
-    }
-    @include lgDesktop {
-        width: 50%;
-    }
-}
-section {
-    margin: rem-calc(40 0);
-    &:first-child {
-        margin-top: 0;
-    }
-    &:last-child {
-        margin-bottom: 0;
-    }
-    p {
-        margin-bottom: rem-calc(20);
-    }
-    &.hero {
-        text-align: center;
-        .image {
-            max-width: 250px;
-            margin: 0 auto;
-            @include desktop {
-                width: 350px;
-                max-width: 100%;
-            }
-        }
-        p {
-            margin: 0;
+// /* LAYOUT */
+// main {
+//     background: rgba(255,255,255,1);
+//     border-radius: 5px;
+//     padding: rem-calc(40 20);
+// }
+// header {
+//     grid-row: 1;
+//     display: flex;
+//     justify-content: flex-start;
+//     align-items: center;
+//     nav {
+//         display: grid;
+//         justify-content: center;
+//         img {
+//             width: 100px;
+//         }
+//         ul {
+//             padding: 0;
+//             margin: 0;
+//             li {
+//                 margin-left: 40px;
+//             }
+//         }
+//     }
+// }
+// hr {
+//     border-top: dotted $teal;
+//     width: 80%;
+//     margin: 0 auto;
+//     @include desktop {
+//         width: 70%;
+//     }
+//     @include lgDesktop {
+//         width: 50%;
+//     }
+// }
+// section {
+//     margin: rem-calc(40 0);
+//     &:first-child {
+//         margin-top: 0;
+//     }
+//     &:last-child {
+//         margin-bottom: 0;
+//     }
+//     p {
+//         margin-bottom: rem-calc(20);
+//     }
+//     &.hero {
+//         text-align: center;
+//         .image {
+//             max-width: 250px;
+//             margin: 0 auto;
+//             @include desktop {
+//                 width: 350px;
+//                 max-width: 100%;
+//             }
+//         }
+//         p {
+//             margin: 0;
 
-            &.showFullscreen {
-                display: none; 
-                color: $teal;
-                font-size: 40px;
-                font-family: $cursive;
-                @include fullscreen {
-                    display: block;
-                }
-            }
-        }
-    }
-    &.mainContent {
-        max-width: 550px;
-        margin-left: auto;
-        margin-right: auto;
-        .imageRose {
-            max-width: 100px
-        }
-        .signOff {
-            p {
-                margin: 0;
-                font-family: $headline;
-            }
-        }
-    }
-}
-footer {
-    padding: rem-calc(40) 0;
-    background: $darkTeal;
-    color: $sand;
-    text-align: center;
-    .content {
-        max-width: 60vw;
-        margin: 0 auto;
-        @include tablet {
-            max-width: 70vw;
-        }
-        @include lgDesktop {
-            max-width: 60vw;
-        }
-        p {
-            @include font-size(20px);
-            @include desktop {
-                margin-bottom: 0;
-                margin-right: rem-calc(20);
-            }
-        }
-        a {
-            color: $sand;
-            @include font-size(16px);
-            @include desktop { 
-                @include font-size(18px);
-            }
-        }
-    }
-}
+//             &.showFullscreen {
+//                 display: none; 
+//                 color: $teal;
+//                 font-size: 40px;
+//                 font-family: $cursive;
+//                 @include fullscreen {
+//                     display: block;
+//                 }
+//             }
+//         }
+//     }
+//     &.mainContent {
+//         max-width: 550px;
+//         margin-left: auto;
+//         margin-right: auto;
+//         .imageRose {
+//             max-width: 100px
+//         }
+//         .signOff {
+//             p {
+//                 margin: 0;
+//                 font-family: $headline;
+//             }
+//         }
+//     }
+// }
+// footer {
+//     padding: rem-calc(40) 0;
+//     background: $darkTeal;
+//     color: $sand;
+//     text-align: center;
+//     .content {
+//         max-width: 60vw;
+//         margin: 0 auto;
+//         @include tablet {
+//             max-width: 70vw;
+//         }
+//         @include lgDesktop {
+//             max-width: 60vw;
+//         }
+//         p {
+//             @include font-size(20px);
+//             @include desktop {
+//                 margin-bottom: 0;
+//                 margin-right: rem-calc(20);
+//             }
+//         }
+//         a {
+//             color: $sand;
+//             @include font-size(16px);
+//             @include desktop { 
+//                 @include font-size(18px);
+//             }
+//         }
+//     }
+// }

@@ -7,10 +7,12 @@ import "./styles.scss"
 const Layout = ({ children }) => {
   return (
     <div>
-      <div class="unsupported-browser"></div>
+      <div className="unsupported-browser"></div>
       <div className="pageContainer">
-        {/* <Header/> */}
-        <div className="heroImage"><p>Save the Date!</p></div>
+        <Header/>
+        <div className="heroImage">
+          <p>Save the Date!</p>
+          </div>
         <div className="container">
           <main>{children}</main>
         </div>
