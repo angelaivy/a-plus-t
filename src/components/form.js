@@ -27,12 +27,25 @@ export default function Form() {
       .catch((error) => alert(error))
   }
 
+  const handleTY = (e) => {
+    let attend = document.querySelector('input#attending');
+    let noAttend = document.querySelector('input#not-attending')
+    const form = document.querySelector('form');
+    if (attend.checked) {
+      form.action = `/thank-you/`;
+      console.log('attend')
+    } else if (noAttend.checked) {
+      form.action = `/not-attending/`
+      console.log('no attend')
+    }
+  }
+
 return (
     <form 
       id="wedding-rsvp" 
       name="wedding-rsvp" 
       method="POST" 
-      action="/thank-you/" 
+      action={handleTY}
       data-netlify="true" 
       data-netlify-honeypot="bot-field"
       onSubmit={handleSubmit}
@@ -47,51 +60,51 @@ return (
     <p>
     <label>
       Name
-      <input type="text" id="name" name="name" onChange={handleChange} />
+      <input required type="text" id="name" name="name" onChange={handleChange} />
     </label>
     </p>
     <p>Will you be able to attend?</p>
     <p>
       <label>
         Accepts with pleasure
-        <input type="radio" id="attending" name="attending" onChange={handleChange} />
+        <input required type="radio" id="attending" name="attending" onChange={handleChange} />
       </label>
     </p>
     <p>
       <label>
         Declines with regret
-        <input type="radio" id="not-attending" name="attending" onChange={handleChange} />
+        <input required type="radio" id="not-attending" name="attending" onChange={handleChange} />
       </label>
     </p>
     <p>
       <label>
         Number in party
-        <input type="number" id="how-many" name="how-many" min="0" max="10" onChange={handleChange} />
+        <input required type="number" id="how-many" name="how-many" min="1" max="10" onChange={handleChange} />
       </label>
     </p>
     <p>Will you need accomodations?</p>
     <p>
       <label>
         Hotel
-        <input type="radio" id="hotel" name="accomodations" onChange={handleChange} />
+        <input required type="radio" id="hotel" name="accomodations" onChange={handleChange} />
       </label>
     </p>
     <p>
       <label>
         On site RVing
-        <input type="radio" id="rv" name="accomodations" onChange={handleChange} />
+        <input required type="radio" id="rv" name="accomodations" onChange={handleChange} />
       </label>
     </p>
     <p>
       <label>
         On site camping
-        <input type="radio" id="camping" name="accomodations" onChange={handleChange} />
+        <input required type="radio" id="camping" name="accomodations" onChange={handleChange} />
       </label>
     </p>
     <p>
       <label>
         No accomodations needed
-        <input type="radio" id="no-accom" name="accomodations" onChange={handleChange} />
+        <input required type="radio" id="no-accom" name="accomodations" onChange={handleChange} />
       </label>
     </p>
     <p>
@@ -105,6 +118,6 @@ return (
     </p>
     
   </form> 
-)
+  )
 }
 
