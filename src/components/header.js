@@ -8,7 +8,7 @@ const Header = ({ siteTitle }) => (
     <nav>
       <ul>
         <li><Link to="/location">Location & Event Details</Link></li>
-        <li><Link to="/"><img src={Icon} alt="Heart Infinity"/></Link></li> 
+        <li><Link to="/"><img src={Icon} alt="Heart Infinity"/><span>#WilsonUponAStar</span></Link></li> 
         <li><Link to="/rsvp">RSVP & Regsistry</Link></li>
       </ul>
     </nav>

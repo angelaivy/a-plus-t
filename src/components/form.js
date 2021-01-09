@@ -27,25 +27,12 @@ export default function Form() {
       .catch((error) => alert(error))
   }
 
-  const handleTY = (e) => {
-    let attend = document.querySelector('input#attending');
-    let noAttend = document.querySelector('input#not-attending')
-    const form = document.querySelector('form');
-    if (attend.checked) {
-      form.action = `/thank-you/`;
-      console.log('attend')
-    } else if (noAttend.checked) {
-      form.action = `/not-attending/`
-      console.log('no attend')
-    }
-  }
-
 return (
     <form 
       id="wedding-rsvp" 
       name="wedding-rsvp" 
       method="POST" 
-      action={handleTY}
+      action="/thank-you/"
       data-netlify="true" 
       data-netlify-honeypot="bot-field"
       onSubmit={handleSubmit}
@@ -116,7 +103,6 @@ return (
     <p>
       <button type="submit">Submit</button>
     </p>
-    
   </form> 
   )
 }

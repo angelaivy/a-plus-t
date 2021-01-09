@@ -10,12 +10,7 @@ const Layout = ({ children }) => {
       <div className="unsupported-browser"></div>
       <div className="pageContainer">
         <Header/>
-        <div className="heroImage">
-          <p>Save the Date!</p>
-          </div>
-        <div className="container">
-          <main>{children}</main>
-        </div>
+          <main className="container">{children}</main>
         <Footer />
       </div>
     </div>

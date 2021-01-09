@@ -13,32 +13,36 @@ const IndexPage = (props) => (
   </Helmet>
   <SEO title="Home" />
     <section className="hero">
-      <p className="showFullscreen">Save the Date!</p>
       <h1>
         <span>Angela Jean Ivy</span>    
         <span className="infin">&infin;</span>
         <span>Terry Jay Wilson</span>
       </h1>
+      <p>#WilsonUponAStar</p>
       <div className="intro">
-      <div className="image">
+        <div className="image">
           <Image />
         </div>
-        <h2>TIE THE KNOT</h2>
-        <h3>June 12, 2021</h3>
-        <p><strong>Where the desert meets the trees ~ Wenas,&nbsp;WA</strong></p>
+        <div className="details">
+          <h2>TIE THE KNOT</h2>
+          <h3>June 12, 2021</h3>
+          <p>4:00 PM</p>
+          <p><strong>Where the desert meets the trees</strong></p>
+          <p>Dusty Spur Ranch<br/>21731 N Wenas Rd.<br/>Selah, WA 98902</p>
+        </div>
       </div>
     </section>
-    <hr></hr>
+    <hr/>
     <section className="mainContent">
+      <h4>A note for Guests</h4>
       <p>Hi Everyone! Thank you so much for visiting our wedding website! We are very excited to celebrate our day with our closest family & friends.</p>
-      <p>At this time, we are planning on moving ahead with the full wedding and as the date gets closer, we will be updating plans as needed for COVID restrictions.</p>
-      <p>Our wedding will be held on private property in Wenas, WA. It is a semi-destination for most folks, so we are looking at different options for lodging and/or transportation as we have guests coming from all over. It's about a 45 minute drive NW from Yakima. Our ceremony will be held on on a hill, overlooking the valley up to the Cascades, followed by a dinner and celebration.</p>
-      <p>More details to come regarding lodging options, directions, RSVP, time, etc. following the formal invitations. Feel free to <a href="mailto: angelaivy1111@gmail.com">email us</a> if you have any questions.</p>
-      <ImageRose />
-      <div className="signOff">
-        <p>Cheers!</p>
-        <p>Angela & Terry</p>
-      </div>
+      <p>We are monitoring the COVID-19 situation closely. We will keep this page updated if plans change, however at this time we are still planning on moving forward with the full wedding. We are hopeful with vaccines being rolled out and the wedding being held outdoors that it will allow for a safe space to celebrate!</p>
+      <hr/>
+      <h4>Our Story <small>(as told by Angela)</small></h4>
+      <p>We met at a mutual friends house several years ago, around 2012, right as I was about to move to Seattle. We hit it off right away but we both had big things going on in our lives and the timing just wasn't right. We kept in touch over the years, including dating long distance a couple of times, but the universe had other plans and lessons for us at that time. Terry was focused on his son, and I was building my career in the city.</p>
+      <p>Terry & I have come to realize our lives are full of synchronicities and parallels. It's fate. Over the years, our paths kept crossing and in February 2019 we decided to give it one more go at a relationship. By this time, I had a good solid career, and the ability to work remotely occasionally. Although we were long distance, this time it just felt like we could finally make it work. It wasn't always easy, but it all was so worth it. In March of 2020, I made the move temporarily to Yakima, to be with Terry and his son, Justin.</p>
+      <p>Terry proposed to me on Mother's Day - May 10, 2020 at one of my favorite and most important places, my family cabin over on Hood Canal. He was very sneaky and I was not expecting it. He had asked my dad the week or so before, and even had the ring delivered to the house. Due to the pandemic, this took planning! I didn't expect a thing. It was perfect.</p>
+      <p>After our wedding, we plan on moving back over to the west side of Washington. We hope to buy a house this year, and get Justin started in middle school! We are so grateful for our family and the love and support they have always unconditionally shown us. The love and gratitude we have for them is endless.</p>
     </section>
   </Layout>
 )
