@@ -3,7 +3,11 @@
     "develop": {
       "plugins": [
         {
-          "name": "/Users/Angelazer/Desktop/github/a-plus-t/node_modules/@babel/plugin-proposal-optional-chaining/lib/index.js",
+          "name": "babel-plugin-lodash",
+          "options": {}
+        },
+        {
+          "name": "/Users/Angelazer/Desktop/github/a-plus-t/node_modules/gatsby-plugin-typescript/node_modules/@babel/plugin-proposal-optional-chaining/lib/index.js",
           "options": {}
         },
         {
@@ -19,7 +23,10 @@
         {
           "name": "/Users/Angelazer/Desktop/github/a-plus-t/node_modules/@babel/preset-typescript/lib/index.js",
           "options": {
-            "plugins": []
+            "plugins": [],
+            "allExtensions": false,
+            "isTSX": false,
+            "jsxPragma": "React"
           }
         }
       ],
@@ -31,7 +38,11 @@
     "develop-html": {
       "plugins": [
         {
-          "name": "/Users/Angelazer/Desktop/github/a-plus-t/node_modules/@babel/plugin-proposal-optional-chaining/lib/index.js",
+          "name": "babel-plugin-lodash",
+          "options": {}
+        },
+        {
+          "name": "/Users/Angelazer/Desktop/github/a-plus-t/node_modules/gatsby-plugin-typescript/node_modules/@babel/plugin-proposal-optional-chaining/lib/index.js",
           "options": {}
         },
         {
@@ -47,7 +58,10 @@
         {
           "name": "/Users/Angelazer/Desktop/github/a-plus-t/node_modules/@babel/preset-typescript/lib/index.js",
           "options": {
-            "plugins": []
+            "plugins": [],
+            "allExtensions": false,
+            "isTSX": false,
+            "jsxPragma": "React"
           }
         }
       ],
@@ -59,7 +73,11 @@
     "build-html": {
       "plugins": [
         {
-          "name": "/Users/Angelazer/Desktop/github/a-plus-t/node_modules/@babel/plugin-proposal-optional-chaining/lib/index.js",
+          "name": "babel-plugin-lodash",
+          "options": {}
+        },
+        {
+          "name": "/Users/Angelazer/Desktop/github/a-plus-t/node_modules/gatsby-plugin-typescript/node_modules/@babel/plugin-proposal-optional-chaining/lib/index.js",
           "options": {}
         },
         {
@@ -75,7 +93,10 @@
         {
           "name": "/Users/Angelazer/Desktop/github/a-plus-t/node_modules/@babel/preset-typescript/lib/index.js",
           "options": {
-            "plugins": []
+            "plugins": [],
+            "allExtensions": false,
+            "isTSX": false,
+            "jsxPragma": "React"
           }
         }
       ],
@@ -87,7 +108,11 @@
     "build-javascript": {
       "plugins": [
         {
-          "name": "/Users/Angelazer/Desktop/github/a-plus-t/node_modules/@babel/plugin-proposal-optional-chaining/lib/index.js",
+          "name": "babel-plugin-lodash",
+          "options": {}
+        },
+        {
+          "name": "/Users/Angelazer/Desktop/github/a-plus-t/node_modules/gatsby-plugin-typescript/node_modules/@babel/plugin-proposal-optional-chaining/lib/index.js",
           "options": {}
         },
         {
@@ -103,7 +128,10 @@
         {
           "name": "/Users/Angelazer/Desktop/github/a-plus-t/node_modules/@babel/preset-typescript/lib/index.js",
           "options": {
-            "plugins": []
+            "plugins": [],
+            "allExtensions": false,
+            "isTSX": false,
+            "jsxPragma": "React"
           }
         }
       ],
