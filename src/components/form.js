@@ -52,50 +52,55 @@ return (
       <input required type="text" id="name" name="name" onChange={handleChange} />
     </label>
     </p>
-    <p>Will you be able to attend?</p>
-    <p>
-      <label>
-        Accepts with pleasure
-        <input required type="radio" id="attending" name="attending" onChange={handleChange} />
-      </label>
-    </p>
-    <p>
-      <label>
-        Declines with regret
-        <input required type="radio" id="not-attending" name="attending" onChange={handleChange} />
-      </label>
-    </p>
+    <fieldset>
+      <p>Will you be able to attend?</p>
+      <p>
+        <label>
+          Accepts with pleasure
+          <input required type="radio" id="attending" name="attending" onChange={handleChange} />
+        </label>
+      </p>
+      <p>
+        <label>
+          Declines with regret
+          <input required type="radio" id="not-attending" name="attending" onChange={handleChange} />
+        </label>
+      </p>
+    </fieldset>
     <p>
       <label>
         Number in party
         <input required type="number" id="how-many" name="how-many" min="1" max="10" onChange={handleChange} />
       </label>
     </p>
-    <p>Will you need accomodations?</p>
-    <p>
-      <label>
-        Hotel
-        <input required type="radio" id="hotel" name="accomodations" onChange={handleChange} />
-      </label>
-    </p>
-    <p>
-      <label>
-        On site RVing
-        <input required type="radio" id="rv" name="accomodations" onChange={handleChange} />
-      </label>
-    </p>
-    <p>
-      <label>
-        On site camping
-        <input required type="radio" id="camping" name="accomodations" onChange={handleChange} />
-      </label>
-    </p>
-    <p>
-      <label>
-        No accomodations needed
-        <input required type="radio" id="no-accom" name="accomodations" onChange={handleChange} />
-      </label>
-    </p>
+    <fieldset>
+      <p>Will you need accomodations?</p>
+      <p>
+        <label>
+          Hotel
+          <input required type="radio" id="hotel" name="accomodations" onChange={handleChange} />
+        </label>
+      </p>
+      <p>
+        <label>
+          On site RVing
+          <input required type="radio" id="rv" name="accomodations" onChange={handleChange} />
+        </label>
+      </p>
+      <p>
+        <label>
+          On site camping
+          <input required type="radio" id="camping" name="accomodations" onChange={handleChange} />
+        </label>
+      </p>
+      <p>
+        <label>
+          No accomodations needed
+          <input required type="radio" id="no-accom" name="accomodations" onChange={handleChange} />
+        </label>
+      </p>
+    </fieldset>
+    
     <p>
       <label>
         What song would bring you out on the dance floor?
