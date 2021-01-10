@@ -52,24 +52,18 @@ return (
         <input required type="text" id="fullName" name="fullName" onChange={handleChange} />
       </label>
     </p>
-    <p>
-      <label>
-        What song would bring you out on the dance floor?
-        <input id="song" type="text" name="song" onChange={handleChange} />
-      </label>
-    </p>
     <fieldset>
       <legend>Will you be able to attend?</legend>
       <p>
         <label>
           Accepts with pleasure
-          <input required type="radio" id="attending" name="attending"/>
+          <input required type="radio" id="attending" name="attending" onChange={handleChange} />
         </label>
       </p>
       <p>
         <label>
           Declines with regret
-          <input required type="radio" id="not-attending" name="attending"/>
+          <input required type="radio" id="not-attending" name="attending" onChange={handleChange} />
         </label>
       </p>
     </fieldset>
@@ -106,6 +100,12 @@ return (
         </label>
       </p>
     </fieldset>
+    <p>
+      <label>
+        What song would bring you out on the dance floor?
+        <input id="song" type="text" name="song" onChange={handleChange} />
+      </label>
+    </p>
     <p>
       <button type="submit">Submit</button>
     </p>
