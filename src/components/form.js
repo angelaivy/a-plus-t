@@ -15,6 +15,7 @@ export default function Form() {
   const handleSubmit = (e) => {
     e.preventDefault()
     const form = e.target
+    const confirm = document.getElementById('confirm');
     fetch('/', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
@@ -23,7 +24,9 @@ export default function Form() {
         ...state,
       }),
     })
-      .then(() => navigate(form.getAttribute('action')))
+      .then(() => form.setAttribute('hidden', ""))
+      .then(() => confirm.removeAttribute('hidden'))
+      // .then(() => navigate(form.getAttribute('action')))
       .catch((error) => alert(error))
   }
 
@@ -32,7 +35,6 @@ return (
       id="wedding-rsvp" 
       name="wedding-rsvp" 
       method="POST" 
-      action="/thank-you/"
       data-netlify="true" 
       data-netlify-honeypot="bot-field"
       onSubmit={handleSubmit}

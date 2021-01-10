@@ -6,8 +6,6 @@ exports.components = {
   "component---src-pages-404-js": () => import("./../../../src/pages/404.js" /* webpackChunkName: "component---src-pages-404-js" */),
   "component---src-pages-index-js": () => import("./../../../src/pages/index.js" /* webpackChunkName: "component---src-pages-index-js" */),
   "component---src-pages-location-js": () => import("./../../../src/pages/location.js" /* webpackChunkName: "component---src-pages-location-js" */),
-  "component---src-pages-not-attending-js": () => import("./../../../src/pages/not-attending.js" /* webpackChunkName: "component---src-pages-not-attending-js" */),
-  "component---src-pages-rsvp-js": () => import("./../../../src/pages/rsvp.js" /* webpackChunkName: "component---src-pages-rsvp-js" */),
-  "component---src-pages-thank-you-js": () => import("./../../../src/pages/thank-you.js" /* webpackChunkName: "component---src-pages-thank-you-js" */)
+  "component---src-pages-rsvp-js": () => import("./../../../src/pages/rsvp.js" /* webpackChunkName: "component---src-pages-rsvp-js" */)
 }
 

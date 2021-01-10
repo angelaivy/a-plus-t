@@ -18,14 +18,15 @@ import Us14 from "../images/us/t-a_14.jpg"
 import Us15 from "../images/us/t-a_15.jpg"
 
 const images = [
-    Us0, Us1, Us2, Us3, Us4, Us5, Us14, Us6, Us7, Us8, Us9, Us10, Us11, Us12, Us13, Us15
+    Us0, Us1, Us2, Us3, Us4, Us5, Us6, Us7, Us8, Us9, Us10, Us11, Us12, Us13, Us14, Us15
 ]
 
 const ImageGrid = () => (
+  
   <section>
     <h4>#WilsonUponAStar</h4>
     <ResponsiveMasonry
-      columnsCountBreakPoints={{350: 1, 750: 2, 900: 3}}
+      columnsCountBreakPoints={{350: 2, 900: 3}}
     >
       <Masonry>
           {images.map((image, i) => (
