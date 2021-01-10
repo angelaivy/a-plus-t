@@ -48,63 +48,54 @@ return (
     </p>
     <p>
     <label>
-      Name
-      <input required type="text" id="name" name="name" onChange={handleChange} />
+      <input required type="text" id="name" name="name" onChange={handleChange}>Name</input>
     </label>
     </p>
     <fieldset>
-      <p>Will you be able to attend?</p>
+      <legend>Will you be able to attend?</legend>
       <p>
         <label>
-          Accepts with pleasure
-          <input required type="radio" id="attending" name="attending" onChange={handleChange} />
+          <input required type="radio" id="attending" name="attending" onChange={handleChange}>Accepts with pleasure</input>
         </label>
       </p>
       <p>
         <label>
-          Declines with regret
-          <input required type="radio" id="not-attending" name="attending" onChange={handleChange} />
+          <input required type="radio" id="not-attending" name="attending" onChange={handleChange}>Declines with regret</input>
         </label>
       </p>
     </fieldset>
     <p>
       <label>
-        Number in party
-        <input required type="number" id="how-many" name="how-many" min="1" max="10" onChange={handleChange} />
+        <input required type="number" id="how-many" name="how-many" min="1" max="10" onChange={handleChange}>Number in party</input>
       </label>
     </p>
     <fieldset>
-      <p>Will you need accomodations?</p>
+      <legend>Will you need accomodations?</legend>
       <p>
         <label>
-          Hotel
-          <input required type="radio" id="hotel" name="accomodations" onChange={handleChange} />
+          <input required type="radio" id="hotel" name="accomodations" onChange={handleChange}>Hotel</input>
         </label>
       </p>
       <p>
         <label>
-          On site RVing
-          <input required type="radio" id="rv" name="accomodations" onChange={handleChange} />
+          <input required type="radio" id="rv" name="accomodations" onChange={handleChange}>On site RVing</input>
         </label>
       </p>
       <p>
         <label>
-          On site camping
-          <input required type="radio" id="camping" name="accomodations" onChange={handleChange} />
+          <input required type="radio" id="camping" name="accomodations" onChange={handleChange}>On site camping</input>
         </label>
       </p>
       <p>
         <label>
-          No accomodations needed
-          <input required type="radio" id="no-accom" name="accomodations" onChange={handleChange} />
+          <input required type="radio" id="no-accom" name="accomodations" onChange={handleChange}>No accomodations needed</input>
         </label>
       </p>
     </fieldset>
     
     <p>
       <label>
-        What song would bring you out on the dance floor?
-        <input id="song" type="text" name="song"/>
+        <input id="song" type="text" name="song">What song would bring you out on the dance floor?</input>
       </label>
     </p>
     <p>
