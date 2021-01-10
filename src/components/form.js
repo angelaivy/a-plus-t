@@ -9,7 +9,7 @@ export default function Form() {
   const [state, setState] = React.useState({})
 
   const handleChange = (e) => {
-    setState({ ...state, [e.target.name]: e.target.value })
+    setState({ ...state, [e.target.id]: e.target.value })
   }
 
   const handleSubmit = (e) => {
