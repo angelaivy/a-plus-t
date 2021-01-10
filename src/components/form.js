@@ -63,13 +63,13 @@ return (
       <p>
         <label>
           Accepts with pleasure
-          <input required type="radio" id="attending" name="attending" onChange={handleChange} />
+          <input required type="radio" id="attending" name="attending"/>
         </label>
       </p>
       <p>
         <label>
           Declines with regret
-          <input required type="radio" id="not-attending" name="attending" onChange={handleChange} />
+          <input required type="radio" id="not-attending" name="attending"/>
         </label>
       </p>
     </fieldset>
