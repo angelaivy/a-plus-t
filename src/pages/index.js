@@ -5,6 +5,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Image from "../components/image"
 import ImageRose from "../components/imageRose"
+import ImageGrid from "../components/masonry"
 
 const IndexPage = (props) => (
   <Layout>
@@ -37,6 +38,7 @@ const IndexPage = (props) => (
       <h4>A note for Guests</h4>
       <p>Hi Everyone! Thank you so much for visiting our wedding website! We are very excited to celebrate our day with our closest family & friends.</p>
       <p>We are monitoring the COVID-19 situation closely. We will keep this page updated if plans change, however at this time we are still planning on moving forward with the full wedding. We are hopeful with vaccines being rolled out and the wedding being held outdoors that it will allow for a safe space to celebrate!</p>
+      <p>Make sure to tag us #WilsonUponAStar in your social media posts so we have a compilation of photos from ou special day! Since we've met, we've always made a wish at 11:11 when we catch it, especially when we were long distance.</p>
       <hr/>
       <h4>Our Story <small>(as told by Angela)</small></h4>
       <p>We met at a mutual friends house several years ago, around 2012, right as I was about to move to Seattle. We hit it off right away but we both had big things going on in our lives and the timing just wasn't right. We kept in touch over the years, including dating long distance a couple of times, but the universe had other plans and lessons for us at that time. Terry was focused on his son, and I was building my career in the city.</p>
@@ -44,6 +46,7 @@ const IndexPage = (props) => (
       <p>Terry proposed to me on Mother's Day - May 10, 2020 at one of my favorite and most important places, my family cabin over on Hood Canal. He was very sneaky and I was not expecting it. He had asked my dad the week or so before, and even had the ring delivered to the house. Due to the pandemic, this took planning! I didn't expect a thing. It was perfect.</p>
       <p>After our wedding, we plan on moving back over to the west side of Washington. We hope to buy a house this year, and get Justin started in middle school! We are so grateful for our family and the love and support they have always unconditionally shown us. The love and gratitude we have for them is endless.</p>
     </section>
+    <ImageGrid />
   </Layout>
 )
 
