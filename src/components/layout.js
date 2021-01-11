@@ -9,9 +9,11 @@ const Layout = ({ children }) => {
     <div>
       <div className="unsupported-browser"></div>
       <div className="pageContainer">
-        <Header/>
-          <main className="container">{children}</main>
-        <Footer />
+        <div className="innerContainer">
+          <Header/>
+            <main className="container">{children}</main>
+          <Footer />
+        </div>
       </div>
     </div>
     )
