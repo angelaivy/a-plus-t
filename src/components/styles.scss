@@ -9,7 +9,7 @@
 .pageContainer {
   display: grid;
   grid-template-columns: 1rem 1fr 1rem;
-  grid-template-rows: 20px 1fr 40px;
+  grid-template-rows: 20px 1fr;
 
   @include desktop {
     grid-template-columns: 2rem 1fr 2rem;
@@ -25,6 +25,8 @@ header {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    background: $white;
+    margin-bottom: 20px;
     nav {
         display: grid;
         width: 100%;
@@ -38,6 +40,9 @@ header {
           img {
             width: 60px;
           }
+          @include tablet {
+            display: none;
+          }
         }
         ul {
             padding: 0;
@@ -48,8 +53,22 @@ header {
             height: 0;
             border-bottom: 1px dotted $darkTeal;
 
+            &#mobileMenu {
+              @include tablet {
+                display: none;
+              }
+            }
+
+            &.desktopMenu {
+              display: none;
+              @include tablet {
+                display: block;
+                height: auto;
+              }
+            }
+
             &.showMenu {
-              height: 80%;
+              height: 100%; 
             }
              li {
                 padding:0;
@@ -66,25 +85,10 @@ header {
         }
     }
 }//header
-hr {
-    border-top: dotted $teal;
-    width: 80%;
-    margin: 0 auto;
-    @include desktop {
-        width: 70%;
-    }
-    @include lgDesktop {
-        width: 50%;
-    }
+.lace {
+    width: 100%;
 }
-section {
-    margin: rem-calc(40 0);
-    &:first-child {
-        margin-top: 0;
-    }
-    &:last-child {
-        margin-bottom: 0;
-    }
+section {   
     p {
         margin-bottom: rem-calc(20);
     }
@@ -116,22 +120,16 @@ section {
         max-width: 550px;
         margin-left: auto;
         margin-right: auto;
-        .imageRose {
-            max-width: 100px
-        }
-        .signOff {
-            p {
-                margin: 0;
-                font-family: $font-heading;
-            }
-        }
     }
 }
+
 footer {
     padding: rem-calc(40) 0;
     background: $darkTeal;
     color: $sand;
     text-align: center;
+    grid-column: 2;
+    grid-row: 3;
     .content {
         max-width: 60vw;
         margin: 0 auto;

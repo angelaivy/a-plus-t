@@ -19,7 +19,7 @@
   /* TYPOGRAPHY */
   html,
   body {
-      font-size: 16px;
+      font-size: 18px;
       line-height: 1.5;
       font-family: $font-body;
       color: $text;
@@ -50,8 +50,7 @@
     }
   }
   h2 {
-    @include font-size(40px);
-    text-transform: uppercase;
+    @include font-size(18px);
     color: $darkTeal;
   }
   h3 {

@@ -28,7 +28,12 @@ export default function Header({ siteTitle }) {
         <div>
           <button id="menu" onClick={handleToggle}><img src={Icon} alt=""/>Menu</button>
 
-          <ul className={!isActive ? null : "showMenu"}>
+          <ul id="mobileMenu" className={isActive ? null : "showMenu"}>
+            <li><Link to="/">Home Page</Link></li> 
+            <li><Link to="/location">Location & Event Details</Link></li>
+            <li><Link to="/rsvp">RSVP & Regsistry</Link></li>
+          </ul>
+          <ul className="desktopMenu">
             <li><Link to="/">Home Page</Link></li> 
             <li><Link to="/location">Location & Event Details</Link></li>
             <li><Link to="/rsvp">RSVP & Regsistry</Link></li>

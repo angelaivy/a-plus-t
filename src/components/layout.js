@@ -12,9 +12,9 @@ const Layout = ({ children }) => {
         <div className="innerContainer">
           <Header/>
             <main className="container">{children}</main>
-          <Footer />
         </div>
       </div>
+      <Footer />
     </div>
     )
 }
