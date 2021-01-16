@@ -55,7 +55,7 @@ return (
     <fieldset>
       <legend>Will you be able to attend?</legend>
       <p>
-        <label>
+        <label>  
           Accepts with pleasure
           <input required type="radio" id="attending" name="attending" value="attending"/>
         </label>
