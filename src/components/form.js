@@ -78,25 +78,25 @@ return (
       <p>
         <label>
           Hotel
-          <input required type="radio" id="hotel" name="accomodations-hotel" onChange={handleChange} />
+          <input required type="radio" id="hotel" name="accomodations" onChange={handleChange} />
         </label>
       </p>
       <p>
         <label>
           On site RVing
-          <input required type="radio" id="rv" name="accomodations-rv" onChange={handleChange} />
+          <input required type="radio" id="rv" name="accomodations" onChange={handleChange} />
         </label>
       </p>
       <p>
         <label>
           On site camping
-          <input required type="radio" id="camping" name="accomodations-camp" onChange={handleChange} />
+          <input required type="radio" id="camping" name="accomodations" onChange={handleChange} />
         </label>
       </p>
       <p>
         <label>
           No accomodations needed
-          <input required type="radio" id="no-accom" name="accomodations-none" onChange={handleChange} />
+          <input required type="radio" id="no-accom" name="accomodations" onChange={handleChange} />
         </label>
       </p>
     </fieldset>
