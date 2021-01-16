@@ -9,7 +9,7 @@ export default function Form() {
   const [state, setState] = React.useState({})
 
   const handleChange = (e) => {
-    setState({ ...state, [e.target.id]: e.target.value })
+    setState({ ...state, [e.target.name]: e.target.value })
   }
 
   const handleSubmit = (e) => {
@@ -78,25 +78,25 @@ return (
       <p>
         <label>
           Hotel
-          <input required type="radio" id="hotel" name="accomodations" onChange={handleChange} />
+          <input required type="radio" id="hotel" name="accomodations" value="hotel" onChange={handleChange} />
         </label>
       </p>
       <p>
         <label>
           On site RVing
-          <input required type="radio" id="rv" name="accomodations" onChange={handleChange} />
+          <input required type="radio" id="rv" name="accomodations" value="rv" onChange={handleChange} />
         </label>
       </p>
       <p>
         <label>
           On site camping
-          <input required type="radio" id="camping" name="accomodations" onChange={handleChange} />
+          <input required type="radio" id="camping" name="accomodations" value="camp" onChange={handleChange} />
         </label>
       </p>
       <p>
         <label>
           No accomodations needed
-          <input required type="radio" id="no-accom" name="accomodations" onChange={handleChange} />
+          <input required type="radio" id="no-accom" name="accomodations" value="none" onChange={handleChange} />
         </label>
       </p>
     </fieldset>
