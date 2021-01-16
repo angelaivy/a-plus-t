@@ -25,22 +25,18 @@ export default function Header({ siteTitle }) {
   return (
     <header>
       <nav>
-        <div>
-          <button id="menu" onClick={handleToggle}><img src={Icon} alt=""/>Menu</button>
+        <button id="menu" onClick={handleToggle}><img src={Icon} alt=""/>Menu</button>
 
-          <ul id="mobileMenu" className={isActive ? null : "showMenu"}>
-            <li><Link to="/">Home Page</Link></li> 
-            <li><Link to="/location">Location & Event Details</Link></li>
-            <li><Link to="/rsvp">RSVP & Regsistry</Link></li>
-          </ul>
-          <ul className="desktopMenu">
-            <li><Link to="/">Home Page</Link></li> 
-            <li><Link to="/location">Location & Event Details</Link></li>
-            <li><Link to="/rsvp">RSVP & Regsistry</Link></li>
-          </ul>
-        </div>
-        
-        
+        <ul id="mobileMenu" className={isActive ? null : "showMenu"}>
+          <li><Link to="/">Home Page</Link></li> 
+          <li><Link to="/location">Location & Event Details</Link></li>
+          <li><Link to="/rsvp">RSVP & Regsistry</Link></li>
+        </ul>
+        <ul className="desktopMenu">
+          <li><Link to="/location">Location & Event Details</Link></li>
+          <li><Link to="/"><img src={Icon} alt=""/> Home Page</Link></li> 
+          <li><Link to="/rsvp">RSVP & Regsistry</Link></li>
+        </ul>
       </nav>
     </header>
   )

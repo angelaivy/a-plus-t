@@ -45,9 +45,10 @@ const IndexPage = (props) => (
       <p>Terry & I have come to realize our lives are full of synchronicities and parallels. It's fate. Over the years, our paths kept crossing and in February 2019 we decided to give it one more go at a relationship. By this time, I had a solid career, and the ability to work remotely occasionally. Although we were long distance, this time it just felt like we could finally make it work. It wasn't always easy, but it all was so worth it. In March of 2020, I made the move temporarily to Yakima, to be with Terry and his son, Justin.</p>
       <p>Terry proposed to me on Mother's Day - May 10, 2020 at one of my favorite and most important places, my family cabin over on Hood Canal. He was very sneaky and I was not expecting it. He had asked my dad the week or so before, and even had the ring delivered to the house. Due to the pandemic, this took planning! I didn't expect a thing. It was perfect.</p>
       <p>After our wedding, we plan on moving back over to the west side of Washington. We hope to buy a house this year, and get Justin started in middle school! We are so grateful for our family and the love and support they have always unconditionally shown us. The love and gratitude we have for them is endless.</p>
+    </section>
+    <section>
       <ImageGrid />
     </section>
-    
   </Layout>
 )
 

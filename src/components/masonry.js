@@ -23,13 +23,14 @@ const images = [
 
 const ImageGrid = () => (
   
-  <section>
+  <div>
     <h4>#WilsonUponAStar</h4>
     <ResponsiveMasonry
       columnsCountBreakPoints={{350: 2, 900: 3}}
     >
-      <Masonry>
-          {images.map((image, i) => (
+      <Masonry
+      gutter="10px">          
+      {images.map((image, i) => (
               <img
                   key={i}
                   src={image}
@@ -39,7 +40,7 @@ const ImageGrid = () => (
           ))}
       </Masonry>
   </ResponsiveMasonry>
-  </section>
+  </div>
 )
 
 export default ImageGrid
