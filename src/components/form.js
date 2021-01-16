@@ -57,13 +57,13 @@ return (
       <p>
         <label>
           Accepts with pleasure
-          <input required type="radio" id="attending" name="attending"/>
+          <input required type="radio" id="attending" name="attending" value="attending"/>
         </label>
       </p>
       <p>
         <label>
           Declines with regret
-          <input required type="radio" id="not-attending" name="attending"/>
+          <input required type="radio" id="not-attending" name="attending" value="not attending"/>
         </label>
       </p>
     </fieldset>
