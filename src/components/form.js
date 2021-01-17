@@ -57,13 +57,13 @@ return (
       <p>
         <label>  
           Accepts with pleasure
-          <input required type="radio" id="attending" name="attending" value="attending"/>
+          <input required type="radio" id="attending" name="attending" value="Accepts with pleasure" onChange={handleChange} />
         </label>
       </p>
       <p>
         <label>
           Declines with regret
-          <input required type="radio" id="not-attending" name="attending" value="not attending"/>
+          <input required type="radio" id="not-attending" name="attending" value="Declines with regret" onChange={handleChange} />
         </label>
       </p>
     </fieldset>
@@ -78,25 +78,25 @@ return (
       <p>
         <label>
           Hotel
-          <input required type="radio" id="hotel" name="accomodations" value="hotel" onChange={handleChange} />
+          <input required type="radio" id="hotel" name="accomodations" value="Hotel" onChange={handleChange} />
         </label>
       </p>
       <p>
         <label>
           On site RVing
-          <input required type="radio" id="rv" name="accomodations" value="rv" onChange={handleChange} />
+          <input required type="radio" id="rv" name="accomodations" value="RV" onChange={handleChange} />
         </label>
       </p>
       <p>
         <label>
           On site camping
-          <input required type="radio" id="camping" name="accomodations" value="camp" onChange={handleChange} />
+          <input required type="radio" id="camping" name="accomodations" value="Camping" onChange={handleChange} />
         </label>
       </p>
       <p>
         <label>
           No accomodations needed
-          <input required type="radio" id="no-accom" name="accomodations" value="none" onChange={handleChange} />
+          <input required type="radio" id="no-accom" name="accomodations" value="None" onChange={handleChange} />
         </label>
       </p>
     </fieldset>
