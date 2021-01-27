@@ -73,6 +73,9 @@
   p, a, ul, li {
     font-size: 18px;
   }
+  footer p.titles {
+    @include font-size(28px);
+  }
   a {
     font-weight: bold;
     color: $darkTeal;

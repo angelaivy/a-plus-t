@@ -22,7 +22,7 @@ const Location = () => (
       <h3>Celebration</h3>
       <p>Along with dancing the night away on the dance floor, we will also have a photo booth, croquet, corn hole, and horseshoes set up. Personal goodie bags will be provided for photobooth props and sanitizer will be stationed at each game.</p>
       <h3>Accommodations</h3>
-      <p>For overnight accomodations we have a couple different options:</p>
+      <p>For overnight accommodations we have a couple different options:</p>
         <ul>
           <li>
             <p>
@@ -64,7 +64,7 @@ const Location = () => (
         <li>
           <span className="time">4:30-5:30 pm</span>
           <span className="info">Wedding party photos</span>
-          <span className="info">Pickups/wagon (priority lesser abled, younger children) start taking guests down, light snacks/munchies on tables, bar opens</span>
+          <span className="info">Pickups/wagon (priority lesser-abled, younger children) start taking guests down, light snacks/munchies on tables, bar opens</span>
         </li>
         <li>
           <span className="time">5:30-6:30 pm</span>
