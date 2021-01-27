@@ -2,8 +2,8 @@
 @import "./functions";
 @import "./ui_elements";
 @import "~rfs/scss";
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
 @font-face {
   font-family: 'Turquoise-Regular';
   src: 
@@ -11,21 +11,22 @@
     url('../fonts/Turquoise-Regular.woff') format('woff'), url('../fonts/Turquoise-Regular.ttf') format('truetype'), url('../fonts/Turquoise-Regular.svg#Turquoise-Regular') format('svg');
   font-weight: normal;
   font-style: normal;
-  }
-  $headline:  'Turquoise-Regular', cursive;
-  $body: 'Cormorant Garamond', serif;
-  $cursive: 'Parisienne', cursive;
+}
+  $font-turq: 'Turquoise-Regular', cursive;
+  $font-cursive: 'Great Vibes', cursive;
+  $font-serif: 'Cormorant Garamond', serif;
+
+  $font-heading:  $font-cursive;
+  $font-body: $font-serif;
+  
   
   /* TYPOGRAPHY */
   html,
   body {
-      font-size: 18px;
+      font-size: 16px;
       line-height: 1.5;
-      font-family: $body;
+      font-family: $font-body;
       color: $text;
-  }
-  body {
-    background: $darkTeal;
   }
   h1, 
   h2,
@@ -33,39 +34,66 @@
   h4,
   h5,
   h6 { 
-    font-family: $headline;
+    font-family: $font-heading;
     margin: 0;
   }
   
   h1 {
-    @include font-size(60px);
+    margin-top: 20px;
+    @include font-size(80px);
     display: grid;
+    gap: 20px;
     line-height: 1.2;
-    span {
-      color: $plum;
-      &.infin {
-        margin: 0 20px;
-        color: $darkPlum;
-      }
-    }
-    @include lgDesktop {
-      font-size: 64px;
-    }
+    color: $plum;
   }
   h2 {
-    @include font-size(40px);
-    text-transform: uppercase;
+    @include font-size(60px);
     color: $darkTeal;
+    margin-top: 50px;
   }
   h3 {
-    font-family: $body;
+    @include font-size(50px);
+    color: $plum;
+  }
+  h4 {
+    font-family: $font-body;
+    @include font-size(28px);
+    color: $darkTeal;
+  }
+  h5 {
+    @include font-size(20px);
+    color: $plum;
+  }
+  p.large {
     @include font-size(20px);
   }
   p {
     margin: 0;
   }
+  p, a, ul, li {
+    font-size: 18px;
+  }
+  footer p.titles {
+    @include font-size(28px);
+  }
   a {
     font-weight: bold;
     color: $darkTeal;
     text-decoration: underline;
+
+    &:hover {
+      color: $plum;
+    }
+  }
+  //reset 
+  button {
+    outline: 0;
+    background: 0;
+    border: 0;
+    padding: 0;
+    margin: 0;
+  }
+
+  ul {
+    margin: 0 0 40px 0;
   }
