@@ -3,17 +3,34 @@
 @import "./scss/functions";
 @import "./scss/typography";
 @import "./scss/ui_elements";
+@import "./scss/form";
 
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+iframe {
+  width: 100%;
+  height: 200px;
+  margin-top: 20px;
+  @include tablet {
+    height: 400px;
+    margin-top: 40px;
+  }
+}
 
 /* LAYOUT */
 .pageContainer {
   display: grid;
-  grid-template-columns: 1rem 1fr 1rem;
+  grid-template-columns: 2rem 1fr 2rem;
   grid-template-rows: 20px 1fr;
 
   @include desktop {
-    grid-template-columns: 2rem 1fr 2rem;
-    grid-template-rows: 40px 1fr 80px;
+    grid-template-rows: 10px 1fr 80px;
+    grid-template-columns: 4rem 1fr 4rem;
   }
 
   .innerContainer {
@@ -21,19 +38,21 @@
     grid-row: 2;
   }
 }
+
+/* UTILS */
+.mT50 {
+  margin-top: 50px;
+} 
 header {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     background: $white;
     margin-bottom: 20px;
     color: $darkTeal;
-    border-bottom: 1px dotted $darkTeal;
+    border-bottom: 1px solid $darkTeal;
+    padding-bottom: 10px;
     nav {
-        display: flex;
-        flex-wrap: nowrap;
-        width: 100%;
-        justify-content: center;
         img {
           width: 60px;
         }
@@ -43,7 +62,8 @@ header {
           align-items: center;
           margin: 0 auto;
           color: $darkTeal;
-          font-family: $font-heading;
+          font-family: $font-body;
+          font-weight: bold;
           
           @include tablet {
             display: none;
@@ -58,7 +78,9 @@ header {
             height: 0;
 
             &#mobileMenu {
-              border-bottom: 1px dotted $darkTeal;
+              &.showMenu {
+                height: 100%; 
+              }
               @include tablet {
                 display: none;
               }
@@ -68,25 +90,25 @@ header {
               display: none;
               @include tablet {
                 display: flex;
+                align-items: center;
                 flex-wrap: nowrap;
-                height: auto;
+                min-height: 75px;
 
                 li {
-                  margin: 20px;
+                  margin: 0 20px;
                 }
                 
               }
-            }
-
-            &.showMenu {
-              height: 100%; 
             }
              li {
                 padding:0;
                 list-style: none;
                 height: 48px;
+                @include tablet {
+                  height: auto;
+                  font-size: 18px;
+                }
                 
-
                 a {
                   text-decoration: none;
                   display: flex;
@@ -99,44 +121,147 @@ header {
 }//header
 .lace {
     width: 100%;
+    margin: 50px 0;
 }
-section {   
+section {  
+    @include tablet {
+      display: grid;
+      grid-template-columns: 1fr 640px 1fr;
+      > * {
+        grid-column: 2;
+      }
+    }
+
+    .mandala {
+      position: absolute;
+      z-index: -1;
+      opacity: .2;
+      background-size: cover;
+      background-repeat: no-repeat; 
+      width: 300px;
+      height: 300px; 
+      &.m1 {
+        top: -200px;
+        background-image: url(../images/mandala-teal1.svg);
+        @include desktop {
+          right: -150px;
+          top: 40px;
+        }
+      }
+      &.m2 {
+        display: none;
+        background-image: url(../images/mandala-teal2.svg);
+        @include desktop {
+          display: block;
+          left: -170px;
+          bottom: 0;
+        }
+      }
+    }
     p {
-        margin-bottom: rem-calc(20);
+        margin-bottom: rem-calc(10);
+        margin-top: rem-calc(10);
     }
     &.hero {
-        text-align: center;
-        .image {
-            max-width: 250px;
-            margin: 0 auto;
-            @include desktop {
-                width: 350px;
-                max-width: 100%;
-            }
-        }
-        p {
-            margin: 0;
+      text-align: center;
+      margin-top: 40px;
 
-            &.showFullscreen {
-                display: none; 
-                color: $teal;
-                font-size: 40px;
-                font-family: $font-cursive;
-                @include fullscreen {
-                    display: block;
-                }
-            }
+      @include tablet {
+        margin-top: 80px;
+      }
+       
+      .image {
+          max-width: 250px;
+          margin: 25px auto;
+          @include desktop {
+              width: 350px;
+              max-width: 100%;
+          }
+      }
+      .details {
+        font-weight: bold;
+        color: $darkTeal;
+        .infin {
+          font-size: 40px;
+          color: $plum;
+          margin: 0 20px;
         }
+      }
+      p {
+          margin: 0;
+          &.showFullscreen {
+              display: none; 
+              color: $teal;
+              font-size: 40px;
+              font-family: $font-cursive;
+              @include fullscreen {
+                  display: block;
+              }
+          }
+      }
+    } //hero 
+    &.schedule {
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+      ul li span {
+        display: block;
+
+        &.time {
+          font-weight: bold;
+          font-family: "Great Vibes", cursive;
+          font-size: 30px;
+        }
+      }
+      
     }
-    &.mainContent {
-        max-width: 550px;
-        margin-left: auto;
-        margin-right: auto;
+}
+
+.storyGrid {
+  position: relative;
+  @media (min-width: 600px)  {
+    display: grid;
+    grid-template-areas: 
+    "a a a"
+    "b b c"
+    "d e e"
+    "f f f";
+    gap: 20px;
+
+    > * {
+      margin: 0;
     }
+
+    > *:first-child {
+      grid-area: a;
+    }
+    > *:nth-child(2) {
+      grid-area: b;
+    }
+    > *:nth-child(3) {
+      grid-area: c;
+    }
+    > *:nth-child(4) {
+      grid-area: e;
+    }
+    > *:nth-child(5) {
+      grid-area: d;
+    }
+    > *:nth-child(6) {
+      grid-area: f;
+    }
+  }
+  img {
+    border: 1px solid $plum;
+  }
 }
 
 .imageGrid {
-  margin-left: -30px; /* gutter size offset */
+  @media (min-width:768px) {
+    margin-top: 50px;
+  }
 }
 .imageGridCol > div {
   padding-left: 30px; /* gutter size */
@@ -144,11 +269,18 @@ section {
 }
 footer {
     padding: rem-calc(40) 0;
+    margin-top: 80px;
     background: $darkTeal;
     color: $sand;
     text-align: center;
     grid-column: 2;
     grid-row: 3;
+    a {
+      color: $sand;
+    }
+    h4 {
+      color: $sand;
+    }
     .content {
         max-width: 60vw;
         margin: 0 auto;
@@ -158,6 +290,7 @@ footer {
         @include lgDesktop {
             max-width: 60vw;
         }
+        
         p {
             @include font-size(20px);
             @include desktop {

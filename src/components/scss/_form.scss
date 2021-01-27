@@ -1,0 +1,124 @@
+@import "./mixins";
+@import "./functions";
+@import "./ui_elements";
+@import "./typography";
+
+
+section form {
+  p {
+    margin: 1rem 0;
+  }
+  label {
+    display: block;
+  }
+  span.required {
+    display: block;
+    font-family: $font-heading;
+  }
+  fieldset {
+    border: none;
+    padding: 0;
+    margin-top: 30px;
+    font-size: 18px;
+    legend {
+      color: $plum;
+      font-family: $font-heading;
+      font-size: 28px;
+    }
+    
+    p {
+      margin: .5rem 0;
+      position: relative;
+
+      label {
+        margin-left: 40px;
+      }
+    }
+  }
+  input {
+    border: none;
+    min-height: 50px;
+    min-width: 50px;
+    width: 100%;
+    display: block;
+    border-bottom: 1px solid $darkTeal;
+
+    &[type="number"] { 
+      margin-right: 20px;
+    }
+  }
+  button[type="submit"] {
+    padding: 15px 20px;
+    cursor: pointer;
+    color: $darkTeal;
+    font-weight: bold;
+    font-size: 26px;
+    margin: 50px 0 0;
+    border: 1px solid $darkTeal;
+    transition: .2s border-color ease-in-out;
+
+    &:hover {
+      border-color: $plum;   
+      color: $plum;
+    }
+
+    img {
+      max-width: 30px;
+    }
+  }
+
+  // styled radio btns 
+  input[type="radio"] {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    height: 20px;
+    width: 20px;
+
+    + label::before {
+      border: 1px solid $darkTeal;
+      content: "";
+      height: 20px;
+      width: 20px;
+      position: absolute;
+      left: 0;
+      top: 0;
+      border-radius: 100%;
+    }
+    + label::after {
+      content: "";
+      opacity: 0;
+      display: block;
+      width: 10px;
+      height: 5px;
+      border-bottom: 2px solid $plum;
+      border-left: 2px solid $plum;
+      transform: rotate(-45deg) scale(0);
+      transition: transform ease 0.25s;
+      position: absolute;
+      top: 7px;
+      left: 5px;
+    }
+
+    &:checked {
+      + label::after {
+        opacity: 1;
+        transform: rotate(-45deg) scale(1);
+      }
+    }
+    &:checked {
+      + label::before {
+        border: 1px solid $plum;
+      }
+    }
+
+    &:focus {
+      + label::before {
+        border: 1px solid $plum;
+        box-shadow: 0 0 5px 0px $plum;
+        outline: 3px solid transparent;
+      }
+    }
+  }
+}// section form 

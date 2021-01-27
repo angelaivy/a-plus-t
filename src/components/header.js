@@ -1,13 +1,9 @@
+import React, { useState } from 'react'
 import { Link } from 'gatsby'
 import PropTypes from 'prop-types'
-import React, { useState } from 'react'
 import Icon from '../images/heartInfinity.png'
 
 export default function Header({ siteTitle }) {
-
-  // const handleClick = () => {
-  //   document.querySelector('header nav ul').className = "showMenu";
-  // }
 
   const [isActive, setActive] = useState("false");
   const handleToggle = () => {

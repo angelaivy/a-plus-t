@@ -1,5 +1,5 @@
 import React from "react"
-import { navigate } from 'gatsby-link'
+import imageRose from "./../images/flowerRed.png"
 
 function encode(data) {
   return Object.keys(data).map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key])).join('&')
@@ -46,68 +46,51 @@ return (
         <input name="bot-field" onChange={handleChange} />
       </label>
     </p>
-    <p>
-      <label>
-        Name
+      <p>
+        <label htmlFor="fullName"><strong>Name&nbsp;&nbsp;&nbsp;</strong><span className="required">(required)</span></label>
         <input required type="text" id="fullName" name="fullName" onChange={handleChange} />
-      </label>
-    </p>
-    <fieldset>
-      <legend>Will you be able to attend?</legend>
-      <p>
-        <label>  
-          Accepts with pleasure
-          <input required type="radio" id="attending" name="attending" value="Accepts with pleasure" onChange={handleChange} />
-        </label>
       </p>
       <p>
-        <label>
-          Declines with regret
-          <input required type="radio" id="not-attending" name="attending" value="Declines with regret" onChange={handleChange} />
-        </label>
-      </p>
-    </fieldset>
-    <p>
-      <label>
-        Number in party
+        <label htmlFor="how-many"><strong>Number in party</strong><span className="required">(required)</span></label>
         <input required type="number" id="how-many" name="how-many" min="1" max="10" onChange={handleChange} />
-      </label>
-    </p>
+      </p>
+    <fieldset>
+        <legend><strong>Will you be able to attend?</strong></legend>
+        <span className="required">(required)</span>
+        <p>
+          <input required type="radio" id="attending" name="attending" value="Accepts with pleasure" onChange={handleChange} />
+          <label htmlFor="attending"><strong>Accepts with pleasure</strong></label>
+        </p>
+        <p>
+          <input required type="radio" id="not-attending" name="attending" value="Declines with regret" onChange={handleChange} />
+          <label htmlFor="not-attending"><strong>Declines with regret</strong></label>
+        </p>
+    </fieldset>
     <fieldset>
       <legend>Will you need accomodations?</legend>
       <p>
-        <label>
-          Hotel
-          <input required type="radio" id="hotel" name="accomodations" value="Hotel" onChange={handleChange} />
-        </label>
+        <input type="radio" id="hotel" name="accomodations" value="Hotel" onChange={handleChange} /> 
+        <label htmlFor="hotel">Hotel</label>
       </p>
       <p>
-        <label>
-          On site RVing
-          <input required type="radio" id="rv" name="accomodations" value="RV" onChange={handleChange} />
-        </label>
+        <input type="radio" id="rv" name="accomodations" value="RV / Trailer" onChange={handleChange} />  
+        <label htmlFor="rv">On site RVing / Trailer</label>
       </p>
       <p>
-        <label>
-          On site camping
-          <input required type="radio" id="camping" name="accomodations" value="Camping" onChange={handleChange} />
-        </label>
+        <input type="radio" id="camping" name="accomodations" value="Camping (No Rv-Trailer)" onChange={handleChange} />
+        <label htmlFor="camping">On site camping (No RV-Trailer)</label>
       </p>
       <p>
-        <label>
-          No accomodations needed
-          <input required type="radio" id="no-accom" name="accomodations" value="None" onChange={handleChange} />
-        </label>
+        <input type="radio" id="no-accom" name="accomodations" value="None" onChange={handleChange} />
+        <label htmlFor="no-accom">No accomodations needed</label>
       </p>
     </fieldset>
     <p>
-      <label>
-        What song would bring you out on the dance floor?
-        <input id="song" type="text" name="song" onChange={handleChange} />
-      </label>
+    <label htmlFor="song">What song would bring you out on the dance floor?</label>    
+    <input id="song" type="text" name="song" onChange={handleChange} />
     </p>
     <p>
-      <button type="submit">Submit</button>
+      <button type="submit">Submit <img src={imageRose} alt=""/></button>
     </p>
   </form> 
   )
