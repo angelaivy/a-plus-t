@@ -42,6 +42,7 @@ section form {
     width: 100%;
     display: block;
     border-bottom: 1px solid $darkTeal;
+    background-color: transparent;
 
     &[type="number"] { 
       margin-right: 20px;

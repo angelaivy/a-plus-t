@@ -43,6 +43,9 @@ iframe {
 .mT50 {
   margin-top: 50px;
 } 
+.noMargB {
+  margin-bottom: 0 !important;
+}
 header {
     display: flex;
     align-items: center;
@@ -73,13 +76,13 @@ header {
             padding: 0;
             margin: 0;
             text-align: center;
-            transition: all .3s ease-in-out;
             overflow: hidden;
             height: 0;
+            transition: height .3s ease-in-out;
 
             &#mobileMenu {
               &.showMenu {
-                height: 100%; 
+                height: 150px; 
               }
               @include tablet {
                 display: none;
